@@ -3,7 +3,6 @@
 // 2. hacer try catch para una expresion no valida
 
 
-
 var botones = [
     "7", "8", "9", "+",
     "4", "5", "6", "-",
@@ -15,7 +14,6 @@ var botones = [
 
 
 function renderizarGUI(){
-    
     //DIV CALCULADORA
     //1. crear el elemento
     const divCalculadora = document.createElement("div");
@@ -61,7 +59,7 @@ function renderizarGUI(){
 
         let boton = document.createElement("button");
         boton.setAttribute("id", "boton"+botones[i]);
-        boton.setAttribute("class", "btn btn-dark col-3 border-white")
+        boton.setAttribute("class", "btn btn-info col-3 border-white")
         boton.innerHTML=botones[i]
 
         //agregar un "escuchador de eventos"
